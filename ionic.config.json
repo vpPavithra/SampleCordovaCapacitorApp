@@ -1,0 +1,7 @@
+{
+  "name": "sampleCordovaCap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
