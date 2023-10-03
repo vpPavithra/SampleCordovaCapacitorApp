@@ -1,33 +1,59 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "allowSyntheticDefaultImports": true,
   "compileOnSave": false,
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "compilationMode": "partial",
+    "fullTemplateTypeCheck": true, 
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true
+  },
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es2022",
     "module": "es2020",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "reflect-metadata",
+      "jest"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "lib": [
-      "es2018", 
+      "es2018",
       "dom"
     ],
-    "useDefineForClassFields": false
+    "paths": {
+      "@app/*": ["*"],
+      "sunbird-sdk": ["../node_modules/@project-sunbird/sunbird-sdk"],
+      "sunbird-sdk/*": ["../node_modules/@project-sunbird/sunbird-sdk/*"],
+      "@project-sunbird/common-consumption": ["../node_modules/@project-sunbird/common-consumption"],
+      "@project-sunbird/common-consumption/*": ["../node_modules/@project-sunbird/common-consumption/*"],
+      "common-form-elements": ["../node_modules/@project-sunbird/common-form-elements"],
+      "common-form-elements/*": ["../node_modules/@project-sunbird/common-form-elements/*"]
+    }
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
+  "include": [
+    "src/**/*.ts",
+    "./typings/*.d.ts",
+    "./content-player/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.data.ts",
+    "src/**/__tests__/*.ts"
+  ]
 }

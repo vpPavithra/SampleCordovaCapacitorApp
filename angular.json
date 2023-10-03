@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "defaultProject": "app",
   "newProjectRoot": "projects",
   "projects": {
     "app": {
@@ -29,23 +30,77 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*",
+                "input": "content-player",
+                "output": "content-player"
+              },
+              {
+                "glob": "**/*.*",
+                "input": "./node_modules/@project-sunbird/common-consumption/assets",
+                "output": "./assets/common-consumption"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@project-sunbird/sunbird-pdf-player-v9/lib/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@project-sunbird/sunbird-quml-player-v9/lib/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@project-sunbird/sunbird-video-player-web-component/assets",
+                "output": "/assets/"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "sourceMap": {
+              "scripts": true,
+              "styles": true,
+              "vendor": true
+            },
+            "styles": [
+              "src/assets/styles/quml-styles/quml-carousel.css",
+              "node_modules/katex/dist/katex.min.css",
+              "node_modules/video.js/dist/video-js.min.css",
+              "node_modules/@project-sunbird/sb-styles/assets/styles.scss",
+              "node_modules/@project-sunbird/sunbird-video-player-web-component/styles.css",
+              "node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/@project-sunbird/sb-themes/themes/themes-df.scss",
+              {
+                "input": "src/global.scss"
+              }
+            ],
+            "scripts": [
+              "node_modules/@project-sunbird/telemetry-sdk/index.js",
+              "node_modules/epubjs/dist/epub.js",
+              "node_modules/katex/dist/katex.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/video.js/dist/video.js",
+              "node_modules/@project-sunbird/sunbird-video-player-web-component/sunbird-video-player.js",
+              "node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.min.js",
+              "node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.min.js",
+              "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.min.js"
+            ],
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "12mb",
+                  "maximumError": "15mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "12kb",
+                  "maximumError": "14kb"
                 }
               ],
               "fileReplacements": [
@@ -54,7 +109,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": false
             },
             "development": {
               "buildOptimizer": false,
@@ -72,6 +134,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "app:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "app:build:production"
@@ -134,6 +199,7 @@
     }
   },
   "cli": {
+    "analytics": "7125acb1-a9de-4d48-9fd2-67648010c3b2",
     "schematicCollections": [
       "@ionic/angular-toolkit"
     ]

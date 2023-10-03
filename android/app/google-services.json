@@ -1,0 +1,185 @@
+{
+  "project_info": {
+    "project_number": "280944945973",
+    "firebase_url": "https://diksha-4446b.firebaseio.com",
+    "project_id": "diksha-4446b",
+    "storage_bucket": "diksha-4446b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282927060960:android:8a33a86fb7eb94fd",
+        "android_client_info": {
+          "package_name": "org.sunbird.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDRCdPS1cgruWCTz5W0rSsoYQTNHJJlEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282927060960:android:1737649c23e1f366",
+        "android_client_info": {
+          "package_name": "org.sunbird.app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDRCdPS1cgruWCTz5W0rSsoYQTNHJJlEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282927060960:android:cd5a58ebbd68950b",
+        "android_client_info": {
+          "package_name": "org.sunbird.app.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDRCdPS1cgruWCTz5W0rSsoYQTNHJJlEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282927060960-fkoaha1k7fg1bosf0lbs9kb65ep75m3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280944945973:android:7c42cf550679483f",
+        "android_client_info": {
+          "package_name": "dev.diksha.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmp9ScERX8IsGW1_9DvXnWY4mlScgBG_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280944945973:android:cb59c40169a852bd",
+        "android_client_info": {
+          "package_name": "preprod.diksha.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmp9ScERX8IsGW1_9DvXnWY4mlScgBG_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280944945973:android:099250760adb1353",
+        "android_client_info": {
+          "package_name": "staging.diksha.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmp9ScERX8IsGW1_9DvXnWY4mlScgBG_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280944945973-hlulqg05ncjf3euvj7kombceobe247d2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
